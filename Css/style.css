@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 100%;
+    /* yani 16px. likhna zrori nai awine lihdia */
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------- */
+.header {
+    display: flex;
+}
+.navbar {
+    display: flex;
+    width: inherit;
+}
+
+.left-nav {
+    display: flex;
+
+}
+
+.right-nav {
+    margin-left: auto;
+}
+
+.right-nav input {
+    padding: 5px 2px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.right-nav button:hover {
+    background-color: var(--p-color);
+}
+
+.nav-links {
+    justify-content: center;
+
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-links li {
+    list-style: none;
+    /* padding: 9px 0px; */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    padding: 0px 30px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.nav-links li a:hover {
+    color: var(--p-color);
+    font-weight: bolder;
+}
+
+.name-logo,
+.name-logo form {
+    display: flex;
+}
+
+.name-logo img {
+    width: 83px;
+    /* border: 2px solid red; */
+    border-radius: 97px;
+}
+
+.name-logo span {
+    margin-top: 29px;
+    display: block;
+    margin-left: 2px;
+    margin-right: 201px;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+.content {
+    /* background-color: blueviolet; */
+    display: flex;
+    /* flex-direction: column; */
+    padding: 21px 0px;
+    padding-top: 18px;
+    line-height: 21px;
+    font-size: 1.3rem;
+}
+.content-text{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
+}
+.content-text p{
+    
+    margin-top: 22px;
+    line-height: 1.7;
+}
+.content img{
+    width: 391px;
+    opacity: 0.8;
+    margin-left: 50px;
+    border: 1px solid black;
+    border-radius: 150px;
+    
+}
+
+.content::before{
+    content: "";
+    background: url('../img/home.svg') no-repeat center center/cover;
+    position: absolute;
+    height: 373px;
+    width: 78%;
+    width: 88vw;
+    z-index: -1;
+    opacity: 0.1;
+    /* opacity: 0; */
+ }
+
+ .content-bottom-border{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px
+ }
+ 
+ /* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* .lower-content{
+    background-color: green;
+} */
+.img{
+    width: 300px;
+    margin: 9px;
+}
+.article-box{
+    display: flex;
+}
+.article-box-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px;
+    line-height: 2.0;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+.footer {
+    background-color: var(--p-color);
+    color: white;
+}
